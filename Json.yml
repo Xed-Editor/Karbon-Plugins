@@ -1,0 +1,22 @@
+name: Validate JSON
+
+on:
+  push:
+    paths:
+      - '/repo.json'  # Replace with the actual path to your JSON file
+  pull_request:
+    paths:
+      - '/repo.json'  # Same path as above
+
+jobs:
+  check-json:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Validate JSON
+      run: |
+        cat /repo.json | jq empty
+      shell: bash
