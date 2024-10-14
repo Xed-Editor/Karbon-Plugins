@@ -1,6 +1,7 @@
 {
   "plugins": [
     "https://github.com/Xed-Editor/HelloWorld-Plugin-Example",
-    "https://github.com/Xed-Editor/Java-Plugin"
+    "https://github.com/Xed-Editor/Java-Plugin",
+    "https://github.com/AndroMaster436/Java-Compiler"
   ]
 }
